@@ -72,3 +72,4 @@ Pipfile.lock
 # OS files
 .DS_Store
 Thumbs.db 
+chat_logs.txt

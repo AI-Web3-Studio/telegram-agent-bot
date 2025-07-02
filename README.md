@@ -1,6 +1,4 @@
-<p align="right">
-  <b>English</b> | <a href="README_zh.md">简体中文</a>
-</p>
+[English](README.md) | [简体中文](README.zh.md)
 
 # Telegram Agent Bot
 
