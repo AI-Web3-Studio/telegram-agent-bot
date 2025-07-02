@@ -55,7 +55,6 @@ Pipfile.lock
 
 # dotenv
 .env
-.env.*
 
 # mypy
 .mypy_cache/

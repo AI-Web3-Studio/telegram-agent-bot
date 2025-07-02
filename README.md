@@ -1,3 +1,7 @@
+<p align="right">
+  <b>English</b> | <a href="README_zh.md">简体中文</a>
+</p>
+
 # Telegram Agent Bot
 
 ## Project Purpose
