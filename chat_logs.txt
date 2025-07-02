@@ -1,0 +1,12 @@
+2025-07-02 20:52:59,213 - Start polling
+2025-07-02 20:53:00,812 - Run polling for bot @fungitoys_bot id=7206236904 - 'Fungi Bot'
+2025-07-02 20:53:25,033 - HTTP Request: POST http://localhost:8000/mcp/ "HTTP/1.1 200 OK"
+2025-07-02 20:53:25,034 - Received session ID: 6e5e825fd0844c1bb91f5b9adb27c91f
+2025-07-02 20:53:25,043 - HTTP Request: POST http://localhost:8000/mcp/ "HTTP/1.1 202 Accepted"
+2025-07-02 20:53:25,045 - HTTP Request: GET http://localhost:8000/mcp/ "HTTP/1.1 200 OK"
+2025-07-02 20:53:25,049 - HTTP Request: POST http://localhost:8000/mcp/ "HTTP/1.1 200 OK"
+2025-07-02 20:53:28,384 - HTTP Request: DELETE http://localhost:8000/mcp/ "HTTP/1.1 200 OK"
+2025-07-02 20:53:29,888 - [7564892004] USER: I want a discreet, travel-friendly vibrator suitable for beginners, preferably waterproof and USB rechargeable.
+2025-07-02 20:53:29,888 - [7564892004] BOT : [Í¼Æ¬ÍÆ¼ö] <b>TOP Tupper</b>  <b>$25.9</b> <s>$49.0</s>
+Compact, powerful, and ergonomic design with 9 vibration modes, long-lasting battery, and IPX6 waterproof for versatile use.
+2025-07-02 20:53:29,889 - Update id=445740734 is handled. Duration 7234 ms by bot id=7206236904
