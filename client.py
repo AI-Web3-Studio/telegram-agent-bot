@@ -8,6 +8,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.enums import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.types import BotCommand
+from aiogram.client.default import DefaultBotProperties
 from dotenv import load_dotenv
 from handlers import commands, message
 from utils.logging import setup_logging
@@ -22,7 +23,7 @@ setup_logging()
 TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 # 初始化 Bot 和 Dispatcher / Initialize Bot and Dispatcher
-bot = Bot(token=TELEGRAM_TOKEN, parse_mode=ParseMode.HTML)
+bot = Bot(token=TELEGRAM_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
 dp = Dispatcher(storage=MemoryStorage())
 
 # 注册命令处理器 / Register command handlers
