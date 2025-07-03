@@ -6,12 +6,15 @@ import sys
 
 def setup_logging():
     """
-    配置日志格式和级别 / Configure logging format and level
+    配置日志格式和级别，同时写入文件和控制台 / Configure logging format and level, output to file and console
     """
     logging.basicConfig(
         level=logging.INFO,
         format="[%(asctime)s] [%(levelname)s] %(message)s",
-        stream=sys.stdout
+        handlers=[
+            logging.FileHandler("chat_logs.txt", encoding="utf-8"),  # 写入文件 / Write to file
+            logging.StreamHandler(sys.stdout)  # 控制台输出 / Output to console
+        ]
     )
 
 def log_chat(user_id, action, detail=None):
