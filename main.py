@@ -7,6 +7,7 @@ from aiogram.client.default import DefaultBotProperties
 from aiogram.client.session.aiohttp import AiohttpSession
 from handlers.commands import setup_command_handlers
 from handlers.message import setup_message_handler
+from utils.logging import setup_logging  # 日志初始化 / Logging setup
 
 load_dotenv()
 
@@ -15,6 +16,7 @@ PROXY_URL = os.getenv("PROXY_URL")
 
 
 async def main():
+    setup_logging()  # 初始化日志 / Initialize logging
     # 支持 Windows 下代理
     if PROXY_URL:
         session = AiohttpSession(proxy=PROXY_URL)
