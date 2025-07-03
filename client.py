@@ -29,7 +29,7 @@ dp = Dispatcher(storage=MemoryStorage())
 # 注册命令处理器 / Register command handlers
 commands.setup_command_handlers(dp)
 # 注册消息处理器 / Register message handlers
-message.setup_message_handlers(dp)
+message.setup_message_handler(dp)
 
 async def set_bot_commands():
     """
