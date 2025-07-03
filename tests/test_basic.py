@@ -2,7 +2,7 @@
 基础功能测试 / Basic functionality tests
 """
 import pytest
-from utils.context import context_manager
+from utils.context import context_manager, build_message_context
 from utils.logging import setup_logging, log_chat
 from gpt_service import GPTService
 
@@ -39,10 +39,10 @@ def test_build_message_context():
 
 
 def test_log_chat(caplog):
+    setup_logging()
     with caplog.at_level("INFO"):
         log_chat(123, "hi", "hello")
-    assert "[123] USER: hi" in caplog.text
-    assert "[123] BOT : hello" in caplog.text
+    assert "[User:123] hi | hello" in caplog.text
 
 
 def test_gpt_service_init():
