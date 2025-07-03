@@ -50,7 +50,7 @@ def setup_message_handler(dp):
                     first_line += f" <s>${compare_at_price}</s>"
                 caption = f"{first_line}\n{desc}"
                 # 构建"View Details"按钮 / Build "View Details" button
-                detail_url = f"{SHOP_URL}?product_id={product_id}" if product_id else ""
+                detail_url = f"{SHOP_URL}?startapp=product_{product_id}" if product_id else SHOP_URL
                 keyboard = None
                 if detail_url:
                     keyboard = InlineKeyboardMarkup(
